@@ -1,0 +1,23 @@
+<head>
+  <title>Smart X</title>
+</head>
+
+<body>
+  <h1>Welcome to Smart X!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>照相</button>
+  <p>
+
+  	{{#each pictures}}
+  	<div>
+  		<img data-id={{_id}} class='small-imag' src='{{pic}}'/><span><br/>{{time}}</span>
+  	</div>
+  	{{/each}}
+
+
+  </p>
+</template>
